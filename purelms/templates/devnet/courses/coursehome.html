@@ -1,0 +1,38 @@
+{%extends "devnet/coursebase.html"%}
+
+{%block maincontent%}
+<div class="container" align="center">
+  <ul>Get Busy Living Or Get Busy Dying</ul>
+</div>
+<style>
+.jay{
+  /*background-color: white;*/
+  font-style: normal;
+  font-family: sans-serif;
+  /*border-color: white;*/
+}
+
+</style>
+ <div class="container" align='center'>
+   <div class="jumbotron  jumbotron-fluid">
+     <nav align="center" class="navbar navbar-inverse jay jumbotron-fluid" role="navigation">
+       <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+         <ul class="nav navbar-nav nav_1">
+           <li><a href="index.html">Course Home</a></li>
+           <li><a href="about.html">Syllabus</a></li>
+           <li> <a href="#">Schedule</a></li>
+       		 <li><a href="faculty.html">Faculty</a></li>
+           <li><a href="#" >Progress</a> </li>
+           <li><a href="career.html">Exam</a></li>
+           <li class="last"><a href="contact.html">Discussion</a></li>
+         </ul>
+       </div>
+     </nav>
+     <h1>{{thiscourse.name}}</h1>
+     <img height="200" width="240" src="https://cdn-images-1.medium.com/max/1024/1*3CXBOKNql4qS-lRyHT3pqw.png"/>
+     <p> {{thiscourse.time_period}}</p>
+     <p>Start date : {{thiscourse.start_date}} || End date : {{thiscourse.end_date}}</p>
+   </div>
+ </div>
+
+{%endblock%}
